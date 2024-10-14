@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 
 class AcademicController extends Controller
 {
-    public function international() {
-        $title = "Hubungan Internasional";
+    public function law() {
+        $title = "Hukum S1";
         
         $latestPosts = Post::where('type', 'news')
             ->where('is_published', 1)
@@ -23,25 +23,7 @@ class AcademicController extends Controller
             ->take(3)
             ->get();
 
-        return view('landing.academic.international', compact('latestPosts', 'title'));
+        return view('landing.academic.law', compact('latestPosts', 'title'));
     }
     
-
-    public function english() {
-        $title = "Pendidikan Bahasa Inggris";
-        
-        $latestPosts = Post::where('type', 'news')
-            ->where('is_published', 1)
-            ->where(function ($query) {
-                $query->where('category_id', 2)
-                    ->orWhereHas('tags', function ($query) {
-                        $query->where('tags.id', 2);
-                    });
-            })
-            ->orderBy('created_at', 'desc')
-            ->take(3)
-            ->get();
-
-        return view('landing.academic.english', compact('latestPosts', 'title'));
-    }
 }

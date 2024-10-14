@@ -27,14 +27,8 @@ class GenerateSitemap extends Command
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)
             )
-            // Hubungan Internasional
-            ->add(Url::create('/hubungan-internasional')
-                ->setLastModificationDate(now())
-                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority(0.8)
-            )
-            // Pendidikan Bahasa Inggris
-            ->add(Url::create('/pendidikan-bahasa-inggris')
+            // Hukum S1
+            ->add(Url::create('/hukum-s1')
                 ->setLastModificationDate(now())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)

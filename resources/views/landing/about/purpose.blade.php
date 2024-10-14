@@ -10,7 +10,7 @@
     @include('landing.partials.breaking-news')
 
     <!-- ##### Post Details Title Area Start ##### -->
-    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/fakultas-img/visi-misi-header.jpg')}})">
+    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/building-img/gedung-b.jpg')}})">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-8">
@@ -37,45 +37,24 @@
                     <div class="post-details-content mb-100">
                         <h1 class="mb-30">Visi & Misi</h1>
                         <h4 class="mb-30">Visi</h4>
-                        <p>“Pada tahun 2035, menjadi Fakultas yang Unggul di bidang Ilmu Sosial dan Ilmu Pendidikan berbasis Digitalisasi dan Teknologi Informasi dan Komunikasi serta mampu Berperan aktif di tingkat nasional dan internasional.”.</p>
-
+                        <p>"Pada Tahun 2035 menjadi Fakultas yang Unggul dalam penguasaan dan pengembangan ilmu hukum yang berbasis Teknologi dan Informasi di tingkat Nasional dan berperan aktif di tingkat Internasional".</p>
                         <h4 class="mb-30">Misi</h4>
                         <table class="text-secondary mb-30" style="border-collapse: collapse; width: 100%;">
                             <tr>
                                 <td style="width: 3%; vertical-align: top;">1.</td>
-                                <td>Melaksanakan Pendidikan yang Berkualitas dalam Bidang Ilmu Sosial dan Ilmu Pendidikan yang sesuai dengan Perkembangan IPTEKS dan Kebutuhan Stakeholders.</td>
+                                <td>Melaksanakan pendidikan dan pengajaran dibidang ilmu hukum yang berkualitas berbasis teknologi dan informasi di tingkat nasional dan beorientasi tingkat internasional.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">2.</td>
-                                <td>Melaksanakan Penelitian dalam Bidang Ilmu Sosial dan Ilmu Pendidikan yang dapat dipublikasikan pada Tingkat Nasional dan Internasional.</td>
+                                <td>Melaksanakan penelitian dibidang ilmu hukum berbasis teknologi dan informasi yang mendapatkan rekognisi ditingkat nasional dan intemasional.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">3.</td>
-                                <td>Melaksanakan Kegiatan dan Layanan yang Bermanfaat bagi Masyarakat dalam Bidang Ilmu Sosial dan Ilmu Pendidikan.</td>
+                                <td>Melaksanakan kegiatan pengabdian kepada masyarakat dibidang ilmu hukum berbasis teknologi dan informasi yang bermanfaat bagi masyarakat.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">4.</td>
-                                <td>Menjalin kerjasama dengan instansi,   masyarakat, dan stakeholder lainnya pada tingkat nasional dan internasional untuk mendukung terselenggaranya Tridharma perguruan tinggi.</td>
-                            </tr>
-                        </table>
-
-                        <h4 class="mb-30">Tujuan</h4>
-                        <table class="text-secondary" style="border-collapse: collapse; width: 100%;">
-                            <tr>
-                                <td style="width: 3%; vertical-align: top;">1.</td>
-                                <td>Menghasilkan lulusan yang unggul, profesional, berkarakter dan bermental wirausaha dalam bidang ilmu sosial dan ilmu pendidikan.</td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">2.</td>
-                                <td>Menghasilkan karya ilmiah dan hasil penelitian lainnya dalam bidang ilmu sosial dan ilmu pendidikan yang dipublikasikan pada tingkat nasional dan internasional.</td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">3.</td>
-                                <td>Pengembangan Perilaku Kecendekiawanan Dosen dan Mahasiswa melalui Kegiatan Pengabdian kepada Masyarakat.</td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">4.</td>
-                                <td>Menghasilkan berbagai kesepakatan dan kegiatan kerjasama di Tingkat Lokal, Nasional, Regional dan Internasional untuk Mendukung Terselenggaranya Tridharma Perguruan Tinggi.</td>
+                                <td>Melaksanakan kerjasama dengan berbagai instansi pemerintah dan swasta tingkat Nasional dan Intemasional yang mendukung tata kelola Tridharma perguruan tinggi bidang hukum yang berbasis teknologi dan informasi.</td>
                             </tr>
                         </table>
                     </div>

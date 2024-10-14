@@ -34,8 +34,7 @@
                                 </li>
                                 <li><a href="#">Program Studi</a>
                                     <ul class="dropdown">
-                                        <li><a href="{{route('landing.academic.international')}}">Hubungan Internasional</a></li>
-                                        <li><a href="{{route('landing.academic.english')}}">Pend. Bahasa Inggris</a></li>
+                                        <li><a href="{{route('landing.academic.law')}}">Hukum S1</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Informasi</a>

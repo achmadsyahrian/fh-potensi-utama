@@ -10,7 +10,7 @@
 
     <!-- ##### Post Details Title Area Start ##### -->
     <div class="post-details-title-area bg-overlay clearfix"
-        style="background-image: url({{ asset('landing/assets/img/prodi-img/hubungan-internasional-header.jpg') }})">
+        style="background-image: url({{ asset('landing/assets/img/building-img/gedung-b.jpg') }})">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-8">
@@ -37,29 +37,26 @@
                     <div class="post-details-content mb-100">
                         <h1 class="mb-30">Visi Misi</h1>
                         <h4 class="mb-30">Visi</h4>
-                        <p>Pada tahun 2035, Menjadi Program Studi Hubungan Internasional yang unggul, profesional, dan berkarakter pada kajian pembangunan berkelanjutan dengan mengintegrasikan teknologi informasi dan komunikasi yang berkontribusi pada pembangunan daerah dan pembangunan nasional.</p>
+                        <p>"Pada tahun 2035 menjadi progam studi hukum yang unggul di bidang peminatan hukum teknologi informasi, hukum pidana, hukum perdata yang berbasis teknologi dan informasi dengan menghasilkan lulusan yang beretika profesional di tingkat nasional serta berperan aktif tingkat intemasional".</p>
 
                         <h4 class="mb-30">Misi</h4>
                         <table class="text-secondary mb-30" style="border-collapse: collapse; width: 100%;">
                             <tr>
                                 <td style="width: 3%; vertical-align: top;">1.</td>
-                                <td>Menyelenggarakan kegiatan layanan pendidikan yang berkualitas, dalam penggunaan teknologi informasi dan komunikasi serta relevan dengan perkembangan keilmuan hubungan internasional pada bidang pembangunan berkelanjutan.</td>
+                                <td>Melaksanakan pendidikan dan pengajaran yang berkualitas dibidang Ilmu Hukum yang berbasis teknologi informasi sejalan dengan perkembangan ilmu pengetahuan
+                                 dan teknologi.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">2.</td>
-                                <td>Menyelenggarakan penelitian yang berkualitas, relevan dengan disiplin Hubungan Internasional dan berkontribusi bagi perumusan kebijakan pembangunan nasional.</td>
+                                <td>Melaksanakan Penelitian dalam bidang Ilmu Hukum berbasis teknologi informasi yang bermanfaat bagi masyarakat dan dapat dipublikasi pada tingkat Nasional.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">3.</td>
-                                <td>Melakukan pengabdian kepada masyarakat yang dikembangkan dari hasil penelitian dan kebutuhan masyarakat dengan mempertimbangkan isu pada konteks lokal dan internasional sebagai bagian kontribusi bagi pembangunan nasional melalui aksi, refleksi, dan pemberdayaan masyarakat.</td>
+                                <td>Melaksanakan pelayanan yang bermanfaat bagi masyarakat dalam rangka meningkatkan pengetahuan dan kesadaran hukum masyarakat yang sejalan dengan perkembangan ilmu pengetahuan dan teknologi.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">4.</td>
-                                <td>Membangun jejaring dengan para pemangku kepentingan dan kerjasama di bidang Hubungan Internasional dalam menangani permasalahan-permasalahan terkait isu pembangunan berkelanjutan yang berkontribusi dalam pembangunan nasional.</td>
-                            </tr>
-                            <tr>
-                              <td style="vertical-align: top;">5.</td>
-                              <td>Menerapkan ilmu pengetahuan dan teknologi yang bermanfaat bagi program pembangunan sosial politik masyarakat di Sumatera Utara, Indonesia, dan dunia internasional.</td>
+                                <td>Menjalin kerjasama dengan lembaga-lembaga Nasional, Universitas dan Lembaga Intemasional yang berbasis teknologi informasi.</td>
                             </tr>
                         </table>
                     </div>

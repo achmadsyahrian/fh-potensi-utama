@@ -257,7 +257,7 @@
         </div>
     </div>
 
-    <div class="col-12">
+    {{-- <div class="col-12">
         <div class="elements-title mb-30 text-center">
             <h2>Keanggotaan dan Kerjasama</h2>
         </div>
@@ -395,6 +395,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 @endsection

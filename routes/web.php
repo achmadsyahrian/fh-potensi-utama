@@ -39,10 +39,8 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
         })->name('purpose');
 
         // Program Studi
-            // Hubungan Internasional
-            Route::get('/program-studi/hubungan-internasional', [AcademicController::class, 'international'])->name('academic.international');
-            // Pendidikan Bahasa Inggris
-            Route::get('/program-studi/pendidikan-bahasa-inggris', [AcademicController::class, 'english'])->name('academic.english');
+            // Hukum S1
+            Route::get('/program-studi/hukum-s1', [AcademicController::class, 'law'])->name('academic.law');
 
         // Akreditasi
         // Route::view('/akreditasi', 'landing.about.accreditation')->name('accreditation');
@@ -65,8 +63,8 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
 
     // Akademik
         // Pengabdian Masyarakat
-        Route::get('/pengabdian-masyarakat', [CommunityController::class, 'index'])->name('community.index');
-        Route::get('/pengabdian-masyarakat/{slug}', [CommunityController::class, 'show'])->name('community.show');
+        // Route::get('/pengabdian-masyarakat', [CommunityController::class, 'index'])->name('community.index');
+        // Route::get('/pengabdian-masyarakat/{slug}', [CommunityController::class, 'show'])->name('community.show');
 
         // Penelitian
         Route::get('/penelitian', function(){

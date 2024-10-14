@@ -1,8 +1,8 @@
 @extends('landing.layouts.app')
 {{-- Head --}}
 @section('title', 'Penelitian - '. env('APP_NAME'))
-@section('meta_description', env('APP_NAME').' Universitas Potensi Utama aktif dalam penelitian yang mendorong inovasi di bidang ilmu sosial & kependidikan, berkontribusi pada perkembangan akademik dan industri')
-@section('meta_keywords', 'penelitian fisk upu, penelitian fisk potensi utama, penelitian fisk, penelitian fisk potensi utama')
+@section('meta_description', env('APP_NAME').' Universitas Potensi Utama aktif dalam penelitian yang mendorong inovasi di bidang ilmu hukum, berkontribusi pada perkembangan akademik dan industri')
+@section('meta_keywords', 'penelitian fhukum upu, penelitian fhukum potensi utama, penelitian fhukum, penelitian fhukum potensi utama')
 @section('canonical', env('APP_URL').'/penelitian')
 
 @section('content')
@@ -10,7 +10,7 @@
     @include('landing.partials.breaking-news')
 
     <!-- ##### Post Details Title Area Start ##### -->
-    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/fakultas-img/visi-misi-header.jpg')}})">
+    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/building-img/gedung-b.jpg')}})">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-8">
