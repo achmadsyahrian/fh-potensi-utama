@@ -3,7 +3,10 @@
 @section('title', 'Program Studi Hukum S1 - '. env('APP_NAME'))
 @section('meta_description', 'Program Studi Hukum S1 - '. env('APP_NAME'))
 @section('meta_keywords', 'hukum upu, hukum potensi utama, visi misi hukum upu, berita hukum potensi utama')
-@section('canonical', env('APP_URL').'/program-studi/hukum')
+@section('canonical', env('APP_URL').'/program-studi/hukum-s1')
+@section('json-ld')
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "EducationalOrganization","name": "Hukum S1","url": "{{env('APP_URL')}}/program-studi/hukum-s1","address": {"@type": "PostalAddress","addressLocality": "Medan","addressRegion": "Sumatera Utara","postalCode": "20241","streetAddress": "Jl. K.L Yos Sudarso, Gg. Famili No.247, Tj. Mulia, Kec. Medan Deli" },"department": {"@type": "EducationalOrganization","name": "{{env('APP_NAME')}}","url": "{{env('APP_URL')}}"}}</script>
+@endsection
 @section('content')
 
    @include('landing.partials.breaking-news')
