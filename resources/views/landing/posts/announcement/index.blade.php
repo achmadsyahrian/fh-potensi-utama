@@ -8,7 +8,7 @@
 
 
 @section('content')
-    <div class="catagory-featured-post bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/fakultas-img/visi-misi-header.jpg')}})">
+    <div class="catagory-featured-post bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/building-img/gedung-b.jpg')}})">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-9">
