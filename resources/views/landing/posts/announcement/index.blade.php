@@ -15,7 +15,7 @@
                     <!-- Post Content -->
                     <div class="post-content">
                         <h1 class="tag"><span>Pengumuman</span></h1>
-                        <a href="#" class="post-title">{{env('APP_NAME')}}</a>
+                        <a href="#" class="post-title detail-title">{{env('APP_NAME')}}</a>
                         <p>Selamat datang di halaman Berita dan Informasi {{env('APP_NAME')}} Universitas Potensi Utama. Di sini, Anda dapat menemukan berbagai update terkini, mulai dari kegiatan akademik, prestasi mahasiswa. Temukan informasi terbaru mengenai inovasi, kerjasama, dan program-program unggulan yang menjadi bagian dari komitmen kami untuk terus maju dalam dunia pendidikan.</p>
                         {{-- <span class="post-date">June 20, 2018</span> --}}
                     </div>

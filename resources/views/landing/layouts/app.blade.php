@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <meta name="description" content="@yield('meta_description', 'Selamat datang di situs online ' . env('APP_NAME') . ' Universitas Potensi Utama')">
-    <meta name="keywords" content="@yield('meta_keywords', 'feb universitas potensi utama, feb potensiutama, potensi utama, kampus feb, pendidikan, feb upu medan')">
+    <meta name="keywords" content="@yield('meta_keywords', 'fakultas hukum universitas potensi utama, fakultas hukum potensiutama, potensi utama, kampus fakultas hukum, pendidikan, fhukum upu medan')">
     <link rel="canonical" href="@yield('canonical', env('APP_URL'))">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
