@@ -191,7 +191,7 @@
     </section>
 
     <section class="video-area bg-img bg-overlay bg-fixed mb-70"
-        style="background-image: url({{ asset('landing/assets/img/building-img/gedung-b.jpg') }});">
+        style="background-image: url({{ asset('landing/assets/img/building-img/gedung-upu.jpg') }});">
         <div class="container">
             <div class="row">
                 <!-- Featured Video Area -->

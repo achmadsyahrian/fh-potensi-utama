@@ -45,6 +45,36 @@ class GenerateSitemap extends Command
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
                 ->setPriority(0.9)
             )
+            // Pengumuman
+            ->add(Url::create('/pengumuman/skripsi')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
+                ->setPriority(0.9)
+            )
+            // Pengumuman
+            ->add(Url::create('/pengumuman/pkl')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
+                ->setPriority(0.9)
+            )
+            // Pengumuman
+            ->add(Url::create('/pengumuman/perwalian')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
+                ->setPriority(0.9)
+            )
+            // Pengumuman
+            ->add(Url::create('/pengumuman/krs')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
+                ->setPriority(0.9)
+            )
+            // Pengumuman
+            ->add(Url::create('/pengumuman/ujian')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
+                ->setPriority(0.9)
+            )
             // Penelitian
             ->add(Url::create('/penelitian')
                 ->setLastModificationDate(now())
@@ -71,7 +101,7 @@ class GenerateSitemap extends Command
             if ($post->type == 'news') {
                 $sitemap->add($url->setUrl('/berita/' . $post->slug));
             } elseif ($post->type == 'announcement') {
-                $sitemap->add($url->setUrl('/pengumuman/' . $post->slug));
+                $sitemap->add($url->setUrl('/pengumuman/detail/' . $post->slug));
             } elseif ($post->type == 'community_service') {
                 $sitemap->add($url->setUrl('/pengabdian-masyarakat/' . $post->slug));
             }
