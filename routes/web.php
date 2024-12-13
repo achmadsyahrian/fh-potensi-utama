@@ -38,6 +38,11 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
             return view('landing.about.purpose', compact('latestPosts'));
         })->name('purpose');
 
+        // Sambutan Dekan
+        Route::get('/sambutan-dekan', function(){
+            return view('landing.about.speach');
+        })->name('speach');
+
         // Program Studi
             // Hukum S1
             Route::get('/program-studi/hukum-s1', [AcademicController::class, 'law'])->name('academic.law');
@@ -104,7 +109,5 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
 
             return view('landing.contact', compact('latestPosts', 'tags', 'categories'));
         })->name('contact');
-
-
 });
  

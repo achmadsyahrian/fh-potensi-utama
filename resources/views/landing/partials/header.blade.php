@@ -29,6 +29,7 @@
                                 <li><a href="#">Tentang Fakultas</a>
                                     <ul class="dropdown">
                                         <li><a href="{{route('landing.purpose')}}">Visi Misi</a></li>
+                                        <li><a href="{{route('landing.speach')}}">Sambutan Dekan</a></li>
                                         <li><a href="{{route('landing.research.index')}}">Penelitian</a></li>
                                     </ul>
                                 </li>

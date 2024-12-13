@@ -75,6 +75,12 @@ class GenerateSitemap extends Command
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
                 ->setPriority(0.9)
             )
+            // Sambutan Dekan
+            ->add(Url::create('/sambutan-dekan')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.9)
+            )
             // Penelitian
             ->add(Url::create('/penelitian')
                 ->setLastModificationDate(now())

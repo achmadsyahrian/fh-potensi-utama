@@ -1623,3 +1623,13 @@ img {
   overflow-wrap: break-word !important;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Sambutan Dekan */
+.speach-title::after {
+  content: '';
+  display: block;
+  width: 50%; /* Lebar garis */
+  height: 4px; /* Ketebalan garis */
+  background-color: #0287c3; /* Warna garis */
+  margin: 5px auto 0;
+}
