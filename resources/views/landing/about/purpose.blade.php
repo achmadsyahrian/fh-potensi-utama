@@ -10,14 +10,14 @@
     @include('landing.partials.breaking-news')
 
     <!-- ##### Post Details Title Area Start ##### -->
-    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/building-img/gedung-b.jpg')}})">
+    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/building-img/gedung-upu.jpg')}})">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-8">
                     <!-- Post Content -->
                     <div class="post-content">
-                        <p class="tag"><span>Visi Misi</span></p>
-                        <p class="post-title">{{env('APP_NAME')}}</p>
+                        <p class="tag"><span>{{__('partials/navbar.navbar.purpose')}}</span></p>
+                        <p class="post-title">{{__('home.app_name')}}</p>
                         {{-- <div class="d-flex align-items-center">
                             <span class="post-date mr-30">June 20, 2018</span>
                             <span class="post-date">By Michael Smith</span>
@@ -35,27 +35,18 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="post-details-content mb-100">
-                        <h1 class="mb-30">Visi & Misi</h1>
-                        <h4 class="mb-30">Visi</h4>
-                        <p>"Pada Tahun 2035 menjadi Fakultas yang Unggul dalam penguasaan dan pengembangan ilmu hukum yang berbasis Teknologi dan Informasi di tingkat Nasional dan berperan aktif di tingkat Internasional".</p>
-                        <h4 class="mb-30">Misi</h4>
+                        <h1 class="mb-30">{{__('about/purpose.purpose.title')}}</h1>
+                        <h4 class="mb-30">{{__('about/purpose.purpose.subtitle_vision')}}</h4>
+                        <p>{{__('about/purpose.purpose.description_vision')}}</p>
+
+                        <h4 class="mb-30">{{__('about/purpose.purpose.subtitle_mission')}}</h4>
                         <table class="text-secondary mb-30" style="border-collapse: collapse; width: 100%;">
-                            <tr>
-                                <td style="width: 3%; vertical-align: top;">1.</td>
-                                <td>Melaksanakan pendidikan dan pengajaran dibidang ilmu hukum yang berkualitas berbasis teknologi dan informasi di tingkat nasional dan beorientasi tingkat internasional.</td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">2.</td>
-                                <td>Melaksanakan penelitian dibidang ilmu hukum berbasis teknologi dan informasi yang mendapatkan rekognisi ditingkat nasional dan intemasional.</td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">3.</td>
-                                <td>Melaksanakan kegiatan pengabdian kepada masyarakat dibidang ilmu hukum berbasis teknologi dan informasi yang bermanfaat bagi masyarakat.</td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">4.</td>
-                                <td>Melaksanakan kerjasama dengan berbagai instansi pemerintah dan swasta tingkat Nasional dan Intemasional yang mendukung tata kelola Tridharma perguruan tinggi bidang hukum yang berbasis teknologi dan informasi.</td>
-                            </tr>
+                            @foreach (trans('about/purpose.purpose.description_mission') as $key => $mission)
+                                <tr>
+                                    <td style="width: 3%; vertical-align: top;">{{ $key }}</td>
+                                    <td>{{ $mission }}</td>
+                                </tr>
+                            @endforeach
                         </table>
                     </div>
                 </div>
@@ -66,7 +57,7 @@
 
                         <!-- Latest News Widget -->
                         <div class="single-widget-area news-widget mb-30">
-                            <h4>Berita Terbaru</h4>
+                            <h4>{{__('about/purpose.purpose.news.title')}}</h4>
                             @foreach ($latestPosts as $post)
                                 <div class="single-blog-post d-flex style-4 mb-30">
                                     <div class="blog-thumbnail">
@@ -81,14 +72,16 @@
                                         </a>
                                     </div>
                                     <div class="blog-content">
-                                        <span class="post-date">{{ $post->created_at->format('M j, Y') }}</span>
-                                        <a href="{{route('landing.news.show', $post->slug)}}" class="post-title" title="{{$post->title}}">{{ \Illuminate\Support\Str::limit($post->title, 50, '...') }}</a>
+                                        <span class="post-date">{{ \Carbon\Carbon::parse($post->date)->format('M j, Y') }}</span>
+                                        <a href="{{route('landing.news.show', $post->slug)}}" class="post-title" title="{{ app()->getLocale() == 'en' ? $post->title_en : $post->title }}">
+                                            {{ app()->getLocale() == 'en' ? \Illuminate\Support\Str::limit($post->title_en, 50, '...') : \Illuminate\Support\Str::limit($post->title, 50, '...') }}
+                                        </a>
                                     </div>
                                 </div>
                             @endforeach
                         </div>
                         @if ($latestPosts->isEmpty())
-                            <p >Tidak ada berita <i class="far fa-sad-cry"></i></p>
+                            <p >{{__('about/purpose.purpose.news.empty')}} <i class="far fa-sad-cry"></i></p>
                         @endif
                     </div>
                 </div>

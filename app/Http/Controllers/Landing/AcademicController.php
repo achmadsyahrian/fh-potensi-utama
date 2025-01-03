@@ -19,7 +19,7 @@ class AcademicController extends Controller
                         $query->where('tags.id', 1);
                     });
             })
-            ->orderBy('created_at', 'desc')
+            ->orderBy('date', 'desc')
             ->take(3)
             ->get();
 
